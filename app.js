@@ -11,6 +11,10 @@ app.get("/test", (req, res) => {
     res.send("The API is running!");
 });
 
+app.get("/users", (req, res) => {
+   res.send("This is the users route!");
+});
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Server is running on PORT ${port}`)
