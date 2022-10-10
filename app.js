@@ -15,6 +15,10 @@ app.get("/users", (req, res) => {
    res.send("This is the users route!");
 });
 
+app.get("/diagrams", (req, res) => {
+    res.send("This is the diagrams route!!!!!!");
+});
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Server is running on PORT ${port}`)
