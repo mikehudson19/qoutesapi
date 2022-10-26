@@ -4,7 +4,8 @@ const router = express.Router();
 const app = express();
 
 app.get("/", (req, res) => {
-    res.send("You have hit the right route");
+    const envVar = process.env.ENV_VAR;
+    res.send(`You have hit the right route - this is the env var: ${envVar}`);
 });
 
 app.get("/test", (req, res) => {
