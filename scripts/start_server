@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo systemctl enable test_api.service
+sudo systemctl start test_api.service
