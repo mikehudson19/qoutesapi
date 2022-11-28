@@ -20,6 +20,10 @@ app.get("/diagrams", (req, res) => {
     res.send("This is the diagrams route!!!!!!");
 });
 
+app.get("/fake-route", (req, res) => {
+    res.send("This is the fake route!!!!!!");
+});
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Server is running on PORT ${port}`)
