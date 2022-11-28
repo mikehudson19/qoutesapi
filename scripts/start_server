@@ -1,3 +1,5 @@
 #!/bin/bash
+cd /home/ec2-user/test_api
+sudo npm install
 sudo systemctl enable test_api.service
 sudo systemctl start test_api.service
