@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/test", (req, res) => {
-    res.send("The API is running very fast - just work already!!");
+    res.send("The API is running very fast - just work!");
 });
 
 app.get("/users", (req, res) => {
