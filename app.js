@@ -4,8 +4,9 @@ const router = express.Router();
 const app = express();
 
 app.get("/", (req, res) => {
-    const envVar = process.env.ENV_VAR;
-    res.send(`You have hit the right route - this is the env var: ${envVar}`);
+    const password = process.env.PASSWORD;
+	const url = process.env.URL;
+    res.send(`You have hit the right route - this is the password: ${password} -- this is the URL: ${url}`);
 });
 
 app.get("/test", (req, res) => {
