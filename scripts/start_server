@@ -5,4 +5,3 @@ sudo systemctl enable test_api.service
 sudo systemctl start test_api.service
 #so that the api updates with changes- need a better way
 sudo systemctl restart test_api.service
-mkdir testfolder
