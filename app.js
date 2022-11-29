@@ -13,6 +13,10 @@ app.get("/test", (req, res) => {
     res.send("Another test change!");
 });
 
+app.get("/random", (req, res) => {
+    res.send("Another random route being added!");
+});
+
 app.get("/users", (req, res) => {
    res.send("This is the users route!");
 });
